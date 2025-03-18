@@ -565,10 +565,10 @@ h1 {
     }
 }
 
-/* 별 스타일 */
+
 .falling-star {
     position: absolute;
-    top: -10vh; /* 화면 위에서 생성 */
+    top: -10vh; 
     width: 2vw;
     height: auto;
     opacity: 0;
