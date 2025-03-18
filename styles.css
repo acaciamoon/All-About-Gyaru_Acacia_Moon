@@ -1,0 +1,576 @@
+.index-page {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/starting\ page\ back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.index-page .header-image {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: auto;
+}
+
+.index-page .logo-image {
+    position: absolute;
+    top: 7vw;
+    left: 50;
+    transform: translate(-50%, -50%);
+    width: 90vh;
+    height: auto;
+    animation: pulse 2s infinite ease-in-out; 
+}
+
+.index-page .startbutton-image {
+    position: absolute;
+    top: 85%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 40vh; 
+    height: auto;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.index-page .startbutton-image:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-page {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+.home-page .homepageheart-image {
+    position:absolute;
+    top: 20%; 
+    left: 3%;
+    width: 40vw; 
+    height:auto;
+    z-index: 10;
+}
+
+.home-page .scroll-container {
+    position: relative;
+    width: 100vw;
+    height: 220vh;
+}
+
+.home-page .homepageback-image {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    bottom: 0;
+}
+
+.home-page .homepagemain-image {
+    width: 63vh;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 6%;
+}
+
+.home-page .button-container {
+    position: absolute;
+    top: 125%;
+    right: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page .button-image {
+    width: 50vh;
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.home-page .button-image:hover {
+    transform: scale(1.2); 
+}
+
+#button1 {
+    position: absolute;
+    top: 0;
+}
+
+#button2 {
+    position: absolute;
+    top: 20vh; 
+}
+
+#button3 {
+    position: absolute;
+    top: 40vh; 
+}
+
+#button4 {
+    position: absolute;
+    top: 60vh; 
+}
+
+.history-page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;  
+}
+
+.history-page .history-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/history_shibuya109.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+}
+
+.history-page .history-textbox {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 3; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-page .history-textbox img {
+    width: 130vh;
+    height: auto;
+}
+
+#typingText {
+    position: absolute;
+    top:35%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 55vw;
+    font-size: 2.5vh;
+    color: #300000;
+    text-align: left; 
+    white-space: pre-line;
+}
+
+.history-page .next-button {
+    position: absolute;
+    bottom: 10%;
+    right: 21%;
+    width: auto;
+    height: 3.5vh;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.history-page .overlay-image {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35vw;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 2;
+}
+
+.history-page .history-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 3; 
+}
+
+.type-page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow:scroll;
+}
+
+.type-page .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.type-page .carousel-container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw; 
+    z-index: 2;
+}
+
+.type-page .carousel {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    height: 35vw;
+    overflow: hidden; 
+    z-index: 2;
+}
+
+.type-page .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.type-page .card {
+    width: 22vw;  
+    height: 27vw; 
+    margin: 01vw;
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.6;
+}
+
+.type-page .nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.type-page .nav-btn img {
+    width: 5vw; 
+    min-width: 40px;
+    max-width: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.type-page .nav-btn img:hover {
+    transform: scale(1.3);
+}
+
+.type-page .nav-btn img {
+    width: 5vw; 
+    min-width: 40px;
+    max-width: 80px;
+}
+
+.type-page .description {
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1vw; 
+    color: rgb(255, 145, 240);
+    z-index: 3;
+}
+
+.type-page .description .title {
+    font-size: 2vw; 
+    font-weight: bold;
+}
+
+.type-page .card.prev,
+.type-page .card.active,
+.type-page .card.next {
+    opacity: 0.6;
+}
+
+.type-page .card.active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.type-page .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.type-page .left-btn {
+    left: -6vw; 
+}
+
+.type-page .right-btn {
+    right: -6vw; 
+}
+
+.type-page .nav-btn img {
+    width: 5vw;
+    min-width: 40px;
+    max-width: 80px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.type-page .card.active {
+    opacity: 1;
+    transform: scale(1.2);
+    animation: pulse 2s infinite ease-in-out; 
+}
+
+.fashion-page {
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: black;
+    scrollbar-width: none;
+    width: 160vw; 
+    white-space: nowrap;
+    background: url('images/Fashion_back.jpg') no-repeat left center;
+    background-size: cover; 
+    max-width: 134vw;
+}
+
+.fashion-page::-webkit-scrollbar {
+    display: none; 
+}
+
+.fashion-page .container {
+    display: flex;
+    gap: 5vw;
+    padding: 5vh;
+    height: 100vh;
+    width: 3300vh; 
+    max-width: 4172px;
+    background-size: cover;
+    overflow: hidden;
+    position: relative; 
+}
+
+.fashion-page .item {
+    position: relative;
+    width: 20vh;
+    height: auto;
+    cursor: pointer;
+}
+
+.fashion-page .item:nth-child(1) { 
+    top: 15%;
+    left: 3%;
+    width: 20vw;
+}
+
+.fashion-page .item:nth-child(2) { 
+    top: 53%;
+    left: 7%;
+    width: 31vw;
+}
+
+.fashion-page .item:nth-child(3) { 
+    top: 10%;
+    left: 8%;
+    width: 20vw;
+}
+
+.fashion-page .item:nth-child(4) { 
+    top: 39%;
+    left: 13%;
+    width: 18vw;
+}
+
+.fashion-page .item img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out, width 0.3s, height 0.3s;
+}
+
+.fashion-page .item:nth-child(1) img.hover-img {
+    width: 30vw; 
+}
+
+.fashion-page .item:nth-child(2) img.hover-img {
+    width: 30vw;
+}
+
+.fashion-page .item:nth-child(3) img.hover-img {
+    width: 30vw;
+}
+
+.fashion-page .item:nth-child(4) img.hover-img {
+    width: 30vw;
+}
+
+.makeup-page {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.makeup-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.makeup-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.makeup-character {
+    position: absolute;
+    top: 54%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: auto;
+}
+
+.face {
+    width: 100%;
+    height: auto;
+}
+
+.makeup-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    z-index: 5;
+}
+
+.makeup-effect[data-id="2"],
+.makeup-effect[data-id="5"] {
+    z-index: 10 !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.makeup-items {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.makeup-item {
+    position: absolute;
+    width: 8vw;
+    height: auto;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.makeup-item:hover {
+    transform: scale(1.2);
+}
+
+.makeup-item:nth-child(1) { top: 10%; left: 10%; width: 10vw; } 
+.makeup-item:nth-child(2) { top: 39%; left: 10%; width: 9vw; } 
+.makeup-item:nth-child(3) { top: 68%; left: 13%; width: 3.5vw; } 
+.makeup-item:nth-child(4) { top: 9.5%; right: 14%; width: 1.2vw; } 
+.makeup-item:nth-child(5) { top: 48%; right: 8%; width: 15vw; } 
+.makeup-item:nth-child(6) { top: 80%; right: 8%; width: 13.5vw; } 
+.makeup-item:nth-child(7) { bottom: 5%; left: 30%; width: 5vw; } 
+
+@keyframes fall {
+    from {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0;
+    }
+}
+
+/* 별 스타일 */
+.falling-star {
+    position: absolute;
+    top: -10vh; /* 화면 위에서 생성 */
+    width: 2vw;
+    height: auto;
+    opacity: 0;
+    animation: fall linear infinite;
+}
